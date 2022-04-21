@@ -1,0 +1,129 @@
+.corpo{
+    background-color: #dee0df;
+    color:#fff5ff;
+}
+.note-editing-area{
+    color: black!important;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.menu h1{
+    text-align: center;
+    color: #fff5ff;
+    font-weight: 600;
+}
+.divisao{
+    background-color: #b7aaec;
+    width: 100vw;
+    margin-top: 1px;
+    height: 5px;
+}
+.delete-note{
+    font-size: 30px;
+    color: #8355eb;
+    background-color: #fff5ff;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.fa-play{
+    font-size: 35px;
+    color: #8355eb;
+    background-color: #fff5ff;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+.note{
+    background-color: #babadc;
+    padding: 5px;
+    margin: 3%;
+    border-radius: 12px;
+    list-style: none;
+    text-overflow:ellipsis;
+    overflow:scroll;
+}
+.notas-voice{
+    background-color: #fffffd;
+    width: 35vw;
+    border: solid #8355eb 6px;
+    border-radius: 15px;
+    min-height: 20vh;
+    color: black;
+    text-align: justify;
+    text-overflow:ellipsis;
+}
+.notas-voice h3{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+#seletor-voz{
+    margin-top: -50px;
+    margin-left: 23%;
+    width: 724px;
+    overflow:auto;
+    scroll-behavior: unset;
+}
+#summernote{
+    margin:0;
+    width: 723px;
+    margin-left: 15%;
+    border-radius: 30px;
+    height: 40px;
+
+}
+#summernoter{
+    margin:0;
+    width: 723px;
+    margin-left: 23%;
+    margin-top: 2%;
+    border-radius: 30px;
+    height: 40px;
+    resize: none;
+
+}
+.menu{
+    background-color: #8355eb;
+    padding-bottom: 15px;
+    margin: 0!important;
+}
+#btn-falar{
+    border-radius: 50%;
+    width: 155px;
+    height: 135px;
+}
+
+/*INÍCIO Estilo dos botões: limpar, upload, download e falar*/
+div.botoes{
+    text-align: center;
+    width: 100%;
+}
+
+input.btn{
+    width: 150px;
+    height: 135px;
+    margin: 1.5em;
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
+    background-color: #8355eb;
+    border-radius: 50%;
+
+}
+@media (max-width: 768px) {
+    .container2 {
+        padding: 50px 25px;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+}   
+
+
+
+/*FIM Estilo dos botões: limpar, upload, download e falar*/
