@@ -19,6 +19,7 @@ PopulateVoices();
 btnSpeak.addEventListener('click', ()=> {
 var toSpeak = new SpeechSynthesisUtterance(txtInput.value);
 var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+window.alert("Lendo o texto!")
     voices.forEach((voice)=>{
     if(voice.name === selectedVoiceName){
     toSpeak.voice = voice;

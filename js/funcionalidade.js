@@ -31,7 +31,7 @@ $('#btn-salvar').click(function(){
     })
     anchor = document.createElement('a');
 
-    anchor.download = "hello.docx";
+    anchor.download = "hello.doc";
     anchor.href = (window.webkitURL || window.URL).createObjectURL(file);
     anchor.dataset.downloadurl = ['application/vnd.openxmlformats-officedocument.wordprocessingml.document;', anchor.download, anchor.href].join(':');
     anchor.click();
