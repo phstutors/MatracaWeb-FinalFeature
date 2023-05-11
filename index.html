@@ -16,20 +16,15 @@
 <div class="menu">
     <h1 class="titulo1">MATRACA WEB</h1>
     <!--INÍCIO EDITOR DE TEXTO-->
-    <div class="matraca">
-          <div class="container mt-5 mb-5">
-              <textarea id="summernote" placeholder="SLA"></textarea>
-          </div>
+    <div id="summernote">
+         
     </div>
     <!--FIM EDITOR DE TEXTO-->
-
+<br><br>
         <!--INÍCIO SELETOR DE VOZ-->
         <div id="seletor-voz">
           Seletor de voz: <select id='voiceList'></select>
         </div class>
-        <div>
-          <textarea id="summernoter" placeholder="Os textos que voce falar ficará aqui!" ></textarea>
-        </div>
         </div>
         <div class="divisao"></div>
         <!--FIM SELETOR DE VOZ-->
@@ -42,11 +37,10 @@
         <input class="btn" type="image" src="imagem/pause.png" alt="" id="pause-record-btn"> <!--Pausa o escutador de bvoz kkkkk-->
         <input class="btn" type="image" src="imagem/icon-hear.jpg" alt="" id="btn-falar"> <!--Fala o texto digitado no editor-->
         <input class="btn" type="image" src="imagem/save.png" alt="" id="save-note-btn"> <!--Salva as Notas para ouvir depois-->
-        <input class="btn" type="image" src="imagem/icon-download.jpg" alt="" id="btn-salvar"> <!--Salva as Notas para ouvir depois-->
-      </div>
-      <div class="divisao"></div>
+        <input class="btn" type="image" src="imagem/icon-download.jpg" alt="" id="btn-limpar"> <!--Salva as Notas para ouvir depois-->
+      </div>      <p id="recording-instructions">Aqui estão as instruções!</p>
+      <div class="divisao">
 
-      <p id="recording-instructions">Aqui estão as instruções!</p>
       <div class="notas-voice">
       <h3>Minhas Notas</h3>
       <ul id="notes">
@@ -54,7 +48,10 @@
               <p class="no-notes">você não tem nenhuma nota.</p>
           </li>
       </ul>
+      </div>
+
     </div>
+
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -79,9 +76,6 @@
     <script src="js/speak.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <script>
-      var input = document.querySelector("#summernoter");
-      input.disabled = true;
-    </script>
+   
   </body>
 </html>

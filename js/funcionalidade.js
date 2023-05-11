@@ -2,7 +2,7 @@
 
 $('#summernote').summernote({
     
-    placeholder: 'Digite seu texto aqui...',
+
     lang: 'pt-BR', // default: 'en-US' 
     toolbar: [
         ['basic', ['style', 'fontname', 'fontsize']],

@@ -1,3 +1,5 @@
+
+
 try {
   var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   var recognition = new SpeechRecognition();
@@ -9,7 +11,7 @@ catch(e) {
 }
 
 
-var noteTextarea = $('#summernoter');
+var noteTextarea = $('.note-editable');
 var instructions = $('#recording-instructions');
 var notesList = $('ul#notes');
 
@@ -88,7 +90,7 @@ $('#pause-record-btn').on('click', function(e) {
 
 // Sync the text inside the text area with the noteContent variable.
 noteTextarea.on('input', function() {
-  noteContent = $(this).val();
+  noteContent = $(this).html();
 })
 
 $('#save-note-btn').on('click', function(e) {
