@@ -13,10 +13,19 @@
     margin:0;
     padding:0;
 }
+
 .menu h1{
     text-align: center;
     color: #fff5ff;
     font-weight: 600;
+}
+.sun{
+    color: yellow!important;
+    font-size: 32px!important;
+}
+.moon{
+    color: rgb(25, 25, 184)!important;
+    font-size: 32px!important;
 }
 
 .delete-note{

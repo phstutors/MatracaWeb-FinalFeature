@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="summernote-bs4.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Editor Summer Note</title>
   </head>
-  <body class="corpo">
+  <body class="corpo" id="mudar">
 <div class="menu">
     <h1 class="titulo1">MATRACA WEB</h1>
     <!--INÍCIO EDITOR DE TEXTO-->
@@ -26,7 +28,14 @@
           Seletor de voz: <select id='voiceList'></select>
         </div class>
         </div>
-        <div class="divisao"></div>
+        <div class="divisao">
+          <span class="material-symbols-outlined sun" onclick="lightMode()">
+            light_mode
+            </span>
+            <span class="material-symbols-outlined moon" onclick="darkMode()">
+              dark_mode
+              </span>
+        </div>
         <!--FIM SELETOR DE VOZ-->
       
         <!--INÍCIO BOTÕES DE FUNCIONALIDADE-->
@@ -41,10 +50,10 @@
       </div>      <p id="recording-instructions">Aqui estão as instruções!</p>
       <div class="divisao">
 
-      <div class="notas-voice">
+      <div class="notas-voice" id="mudar2">
       <h3>Minhas Notas</h3>
-      <ul id="notes">
-          <li>
+      <ul id="notes" id="mudar4">
+          <li id="mudar3">
               <p class="no-notes">você não tem nenhuma nota.</p>
           </li>
       </ul>
